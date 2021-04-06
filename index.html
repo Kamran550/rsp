@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play R-S-P !</title>
+    <link href="./css/style.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        Rock Scissor Paper
+    </header>
+
+    <p id="score-div">
+            Your Name 0 : 0 Computer
+    </p]>
+
+    <div class="main-container">
+        <div id="you-div">
+            <p id="personal-label">Your Choice</p>
+            <hr>
+            <label for="choice-input">Rock: R, Scissor: S, Paper: P</label>
+            <input id="choice-input" type="text" placeholder="R? S? P?">
+            <button onclick="compare()">Choose</button>
+        </div>
+        <div class="vs-div">
+            VS
+        </div>
+        <div id="comp-div">
+            <p>Computer's Choice</p>
+            <hr>
+            <div id="computers-choice-display">
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/code.js"></script>
+</body>
+</html>

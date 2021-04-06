@@ -1,0 +1,116 @@
+body{
+    margin: 0;
+    background: url(../media/background.jpg);
+    background-repeat: no-repeat;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p{
+    font-size: 28px;
+    text-align: center;
+}
+
+header{
+    background: #fff;
+    text-align: center;
+    font-size: 32px;
+    padding: 30px;
+    border: 3px solid #000;
+    border-radius: 25px;
+}
+
+#score-div{
+    margin: 30px;
+    text-align: center;
+    color: #fff;
+    font-size: 32px;
+    text-shadow: 0 0 10px #000;
+}
+
+.main-container{
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+hr{
+    width: 100%;
+}
+
+#you-div,
+#comp-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    width: 40%;
+    background: #fff;
+    border: 3px solid #000;
+    border-radius: 25px;
+}
+
+label{
+    margin-top: 15px;
+    font-size: 26px;
+}
+
+
+input{
+    border-radius: 25px;
+    border: 1px solid #000;
+    margin: 15px;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+
+button{
+    background: skyblue;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: 1px solid #000;
+}
+
+button:hover{
+    background: cyan;
+}
+
+.vs-div{
+    align-self: center;
+    font-size: 40px;
+    color: #fff;
+    text-shadow: 0 0 10px#000;
+}
+
+#computers-choice-display{
+    justify-self: center;
+    align-self: center;
+    text-shadow: 0 0 10px #000;
+    font-size: 40px;
+    margin: auto;
+}
+
+@media screen and (max-width: 991px) {
+    .main-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-container > div {
+        margin: 10px;
+    }
+
+    label{
+        font-size: 20px
+    }
+
+    input{
+        width: 70%;
+    }
+
+    .main-container > div > p{
+        font-size: 22px;
+    }
+}
